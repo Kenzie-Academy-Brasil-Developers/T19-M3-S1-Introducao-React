@@ -1,5 +1,6 @@
 //import Batatinha from "./components/Header"
 import { BannerSection } from "./components/BannerSection"
+import { CategoriesSection } from "./components/CategoriesSection"
 import { Header } from "./components/Header"
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
     <> 
       <Header/>
       <BannerSection/>
+      <CategoriesSection/>
     </>
   )
 }
