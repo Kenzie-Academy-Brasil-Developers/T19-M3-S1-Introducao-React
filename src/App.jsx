@@ -1,4 +1,5 @@
-
+//import Batatinha from "./components/Header"
+import { Header } from "./components/Header"
 
 const App = () => {
   
@@ -6,7 +7,7 @@ const App = () => {
 
   return (
     <> 
-      
+      <Header/>
     </>
   )
 }
