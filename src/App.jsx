@@ -1,7 +1,5 @@
-//import Batatinha from "./components/Header"
-
 import { LadingPage } from "./pages/LadingPage"
-
+import "./styles/index.css"
 
 const App = () => {
   
