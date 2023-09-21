@@ -1,7 +1,8 @@
 .title1 {
     color: var(--color-black);
     font-family: var(--font-primary);
-    font-size: 6.25rem;
+    /* font-size: 6.25rem; */
+    font-size: clamp(3rem, 5.5vw, 6.25rem);
     font-weight: 500;
     line-height: 1.4;
     text-transform: uppercase;
@@ -10,7 +11,8 @@
 .title2 {
     color: var(--color-black);
     font-family: var(--font-primary);
-    font-size: 3.75rem;
+    /* font-size: 3.75rem; */
+    font-size: clamp(2rem, 5.5vw, 3.75rem);
     font-weight: 500;
     line-height: 1.4;
     text-transform: uppercase;
