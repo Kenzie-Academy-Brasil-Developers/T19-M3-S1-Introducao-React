@@ -1,36 +1,51 @@
 import { ProductCard } from "./ProductCard";
+import { products } from "../../../data/products";
 
-import Product1 from "../../../assets/product1.jpg";
-import Product2 from "../../../assets/product2.jpg";
-import Product3 from "../../../assets/product3.jpg";
-import Product4 from "../../../assets/product4.jpg";
+// import Product1 from "../../../assets/product1.jpg";
+// import Product2 from "../../../assets/product2.jpg";
+// import Product3 from "../../../assets/product3.jpg";
+// import Product4 from "../../../assets/product4.jpg";
 
 export const ProductsSection = () => {
+    
   return (
     <div className="container">
       <section>
         <h2 className="title2">PRODUTOS EM DESTAQUE</h2>
         <ul>
-          <li>
+            {
+                products.map((product) => {
+                    
+                    return (
+                    <li key={product.id}>
+                        <ProductCard title={product.name} image={product.img} price={product.price} />
+                    </li>
+                    )
+                } )
+            }
+            
+          <>
+            {/* <li>
             <ProductCard
-              title="Blazer Branco Elegante"
-              price={490}
-              image={Product1}
+            title="Blazer Branco Elegante"
+            price={490}
+            image={Product1}
             />
-          </li>
-          <li>
+            </li>
+            <li>
             <ProductCard
-              title="Sapatos Amarelos"
-              price={490}
-              image={Product2}
+            title="Sapatos Amarelos"
+            price={490}
+            image={Product2}
             />
-          </li>
-          <li>
+            </li>
+            <li>
             <ProductCard title="Blazer Laranja" price={320} image={Product3} />
-          </li>
-          <li>
+            </li>
+            <li>
             <ProductCard title="Calça Preta" price={140} image={Product4} />
-          </li>
+        </li> */}
+          </>
         </ul>
       </section>
     </div>
