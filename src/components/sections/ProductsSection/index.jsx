@@ -15,10 +15,11 @@ export const ProductsSection = () => {
         <ul>
             {
                 products.map((product) => {
+                    const {id, name, price, img} = product;
                     
                     return (
-                    <li key={product.id}>
-                        <ProductCard title={product.name} image={product.img} price={product.price} />
+                    <li key={id}>
+                        <ProductCard title={name} image={img} price={price} />
                     </li>
                     )
                 } )
