@@ -25,6 +25,12 @@
     font-weight: 700;
 }
 
+.title1.center,
+.title2.center,
+.title3.center {
+    text-align: center;
+}
+
 .paragraph {
     color: var(--color-black);
     font-family: var(--font-secondary);

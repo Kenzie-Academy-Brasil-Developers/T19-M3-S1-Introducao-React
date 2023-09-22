@@ -1,10 +1,11 @@
 import { CategoryCard } from "./CategoryCard";
 import { categories } from "../../../data/categories";
+
 export const CategoriesSection = () => {
   //categoryCard("Sapatos", "http://...")
   return (
     <div className="container">
-      <section>
+      <section >
         <h2 className="title2">CATEGORIAS</h2>
         <ul>
             {categories.map((category) => {
