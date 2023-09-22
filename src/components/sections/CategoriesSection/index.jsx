@@ -4,6 +4,7 @@ import { categories } from "../../../data/categories";
 import styles from "./style.module.css"
 export const CategoriesSection = () => {
   //categoryCard("Sapatos", "http://...")
+  // console.log(categories)
   return (
     <div className="container">
       <section className={styles.categoriesSection} >

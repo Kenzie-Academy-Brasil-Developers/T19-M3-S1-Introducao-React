@@ -3,8 +3,6 @@ import "./styles/index.css"
 
 const App = () => {
   
-
-
   return (
     <> 
       <LadingPage/>
