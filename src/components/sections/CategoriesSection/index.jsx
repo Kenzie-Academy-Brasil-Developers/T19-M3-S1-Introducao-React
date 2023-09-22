@@ -1,13 +1,14 @@
 import { CategoryCard } from "./CategoryCard";
 import { categories } from "../../../data/categories";
 
+import styles from "./style.module.css"
 export const CategoriesSection = () => {
   //categoryCard("Sapatos", "http://...")
   return (
     <div className="container">
-      <section >
+      <section className={styles.categoriesSection} >
         <h2 className="title2">CATEGORIAS</h2>
-        <ul>
+        <ul className={styles.categoriesList}>
             {categories.map((category) => {
                 return (
                     <li key={category.id}>

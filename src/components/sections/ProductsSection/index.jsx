@@ -6,13 +6,14 @@ import { products } from "../../../data/products";
 // import Product3 from "../../../assets/product3.jpg";
 // import Product4 from "../../../assets/product4.jpg";
 
+import styles from "./style.module.css"
 export const ProductsSection = () => {
     
   return (
     <div className="container">
-      <section>
+      <section className={styles.productsSection}>
         <h2 className="title2">PRODUTOS EM DESTAQUE</h2>
-        <ul>
+        <ul className={styles.productList}>
             {
                 products.map((product) => {
                     const {id, name, price, img} = product;
