@@ -1,20 +1,20 @@
-//import Batatinha from "../../components/Header"
-import { Header } from "../../components/Header"
-import { BannerSection } from "../../components/BannerSection"
-import { CategoriesSection } from "../../components/CategoriesSection"
-import { Footer } from "../../components/Footer"
-import { FormSection } from "../../components/FormSection"
-import { ProductsSection } from "../../components/ProductsSection"
+import { DefaultTemplate } from "../../components/DefaultTemplate"
+import { BannerSection } from "../../components/Sections/BannerSection"
+import { CategoriesSection } from "../../components/Sections/CategoriesSection"
+import { FormSection } from "../../components/Sections/FormSection"
+import { ProductsSection } from "../../components/Sections/ProductsSection"
+
 
 export const LadingPage = () => {
     return (
         <>
-            <Header/>
-            <BannerSection/>
-            <CategoriesSection/>
-            <ProductsSection/>
-            <FormSection/>
-            <Footer/>
+            <DefaultTemplate>
+                {/* Valor children para o componente DefaultTemplate */}
+                <BannerSection />
+                <CategoriesSection />
+                <ProductsSection />
+                <FormSection />
+            </DefaultTemplate>
         </>
     )
 }

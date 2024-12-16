@@ -1,9 +1,11 @@
-export const CategoryCard = ({title, image}) => {
-    
+import styles from "./style.module.scss"
+export const CategoryCard = ({ title, image }) => {
+
     return (
-        <>
+        <><div className={styles.categoryCard}>
             <img src={image} alt={`Categoria ${title}`} />
-            <h3>{title}</h3>
+            <h3 className="title3 center">{title}</h3>
+        </div>
         </>
     )
 }
